@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>HomeWork9</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1</version>
     <dependencies>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -16,8 +16,8 @@
     </dependencies>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
 </project>

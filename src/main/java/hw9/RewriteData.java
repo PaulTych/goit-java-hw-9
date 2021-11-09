@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RewriteData {
-    public static void checkFile(File file){
-        if (!file.exists()){
+    public static void checkFile(File file) {
+        if (!file.exists()) {
             file.getParentFile().mkdirs();
             try {
                 file.createNewFile();
@@ -20,7 +20,7 @@ public class RewriteData {
     }
 
     public void rewriteUserData(String inFile, String outJSON) {
-        String line ;
+        String line;
         String[] inFields;
         List<User> userList = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(inFile))) {
@@ -37,7 +37,7 @@ public class RewriteData {
         }
         File file = new File(outJSON);
         checkFile(file);
-        try (BufferedWriter writer = new BufferedWriter( new FileWriter(outJSON))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outJSON))) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(userList, writer);
         } catch (IOException e) {

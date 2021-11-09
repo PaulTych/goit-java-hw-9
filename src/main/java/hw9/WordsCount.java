@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class WordsCount {
-    public void countWords(String inFile) {
+    public void countWords(String inFile){
         String line;
 
         Map<String, Integer> wordsMap = new HashMap<>();

@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class PhoneReader {
-    public void readPhoneNumbers(String inFile){
+    public void readPhoneNumbers(String inFile) {
         String line;
         try (BufferedReader reader = new BufferedReader(new FileReader(inFile))) {
             while ((line = reader.readLine()) != null) {
